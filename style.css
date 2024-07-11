@@ -2,59 +2,84 @@
   width: 50px;
   padding: 12px;
 }
+ 
 body {
   background-color: rgb(200, 217, 219);
-  } 
-nav a{
+  margin: 0;
+}
+ 
+nav a {
   color: white;
   text-decoration: none;
 }
+ 
 .navbar {
-  display: flex; 
+  display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: rgb(34, 38, 66);
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px 0;
 }
-
-a:hover{
-  color:rgb(7, 98, 159);
+ 
+a:hover {
+  color: rgb(7, 98, 159);
   text-decoration: underline;
 }
-.hero-banner {
-  background-image: url(assets/Hero.jpg)
+ 
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+ 
+.hero-image {
+  height: 550px;  /* Change height and width of the banner here --AA*/
+  width: 100%;  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/Hero.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
-  display: flex;
-  justify-content: flex-end;
-  width: auto
+  position: relative;
 }
-.hero-banner__content {
-  padding: 20px 30px;
-  color: white;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.hero-banner__heading {
-  font-size: 3rem;
-  margin: 0;
-}
-.hero-banner__cta {
-  background-color: #039a63;
-  color: white;
-  border: #039a63;
-  outline: #039a63;
-  display: inline-block;
-  padding: 10px 25px;
+ 
+.hero-text {
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  padding: 0 20px;
+  
+}
+ 
+.hero-text h1 {
+  margin: 0;
+  font-size: 20px;
+}
+ 
+.hero-text p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+ 
+.hero-text button {
+  background-color: rgb(7, 98, 159);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 12px;
   cursor: pointer;
+  border-radius: 5px;
 }
-
-.hero-banner__cta:hover {
-  background-color: #24a375;
+ 
+.hero-text button:hover {
+  background-color: rgb(5, 80, 130);
 }
+ 
+.footer {
+  position: absolute;
+}
+ 
+has context menu
